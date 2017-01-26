@@ -1,0 +1,19 @@
+{
+	
+	"data":[
+
+	{"type":1,
+	"question":"Click on the behaviors that road rage drivers can display to show their aggression.",
+	"answers":["Speeding and tailgating", 
+	"Throwing objects at people from the car", 
+	"Improper lane changes and cutting someone off", 
+	"Going the speed limit and making correct lane change signals", 
+	"Obscene hand gestures", 
+	"Waving weapons at other drivers", 
+	"Yelling at other drivers"],
+	"correct":[0,4,2,1,5,6]
+	 }
+	
+
+	]
+}

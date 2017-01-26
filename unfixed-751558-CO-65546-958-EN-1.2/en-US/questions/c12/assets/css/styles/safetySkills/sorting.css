@@ -1,0 +1,90 @@
+html, body { border: 0; margin: 0; padding: 0; }
+body { font: Arial, Helvetica, sans-serif; color: #666; }
+
+#contact p, label, legend { font: 1.5em Arial, Helvetica, sans-serif; }
+#contact h1 { margin: 10px 0 5px; font: 22px Arial, Helvetica, sans-serif; color: rgba(166, 166, 89,1.0); }
+#contact hr { color: inherit; height: 0; margin: 6px 0 6px 0; padding: 0; border: 1px solid #d9d9d9; border-style: none none solid; }
+
+#contact {
+	display: block;
+	width: 1280px; 
+	height: 565px;
+	padding: 5px 35px 35px 35px;
+	border: 3px solid #cbcbcb;
+	background-color: #ffffe5;
+	background: url("../../../images/safetySkillsBG.png") no-repeat !important;
+
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+
+	box-shadow: 0 2px 5px rgba(50, 50, 50, 0.1);
+	-webkit-box-shadow: 0 2px 5px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow: 0 2px 5px rgba(50, 50, 50, 0.1);
+}
+
+#contact fieldset { padding: 10px 20px 20px; -webkit-border-radius:5px; -moz-border-radius:5px; margin:0 0 6px; height:455px;
+	border: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top left, rgba(211, 211, 172,1.0), rgba(255,255,255,0.0));
+    -webkit-border-image: -webkit-linear-gradient(top left, rgba(211, 211, 172,1.0), rgba(255, 255, 255,0.0));
+    border-image: linear-gradient(to bottom right, rgba(211, 211, 172,1.0), rgba(255, 255, 255,0.0) 90%, rgba(255, 255, 255,0.0));
+    border-image-slice: 1;
+}
+
+#contact legend { padding:7px 10px; font-weight:bold; color:#000; -webkit-border-radius:5px; -moz-border-radius:5px; margin-bottom:0 !important; margin-bottom:20px; 
+	border: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(left, rgba(211, 211, 172,1.0), rgba(211, 211, 172,0.5));
+    -webkit-border-image: -webkit-linear-gradient(left, rgba(211, 211, 172,1.0), rgba(211, 211, 172,0.5));
+    border-image: linear-gradient(to right, rgba(211, 211, 172,0.5), rgba(211, 211, 172,0.5));
+    border-image-slice: 1; }
+
+#sortable { 
+	list-style-type: none; 
+	margin: auto; 
+	padding: 10; 
+    width: 50%;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+#sortable li {
+	width:450px;
+	height: 2.0em;	
+	line-height: 1.2em;
+	margin: 0 5px 5px 5px;
+	padding: 7px 5px 5px;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-align:center;
+	vertical-align: middle;
+	border: 1px solid rgba(125, 127, 65, 1);
+	border-radius: 5px;			
+	color:#fff;	
+	/*508-compliant background color*/	
+	background: #baba7e;
+}
+
+#sortable .sortable-placeholder { 
+	height: 2.0em; 
+	line-height: 1.2em; 
+	background-color: rgba(219, 219, 176, 0.6) !important;
+}
+
+
+/*MODAL FORMATTING*/
+.modal-header{
+	text-align: center;
+      font-size: 50px;
+	border-bottom: 3px solid #888!important;
+}
+.modal-title{
+	font-size:50px;
+	text-align: center;	
+}
+.modal-body{
+	text-align: center;
+	background-color: #E3E3E3;
+}
+.modal-footer{
+	border-top: 3px solid #888!important;
+}

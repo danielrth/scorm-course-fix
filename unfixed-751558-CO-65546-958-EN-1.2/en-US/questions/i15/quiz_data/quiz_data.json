@@ -1,0 +1,14 @@
+{
+	
+	"data":[
+
+		
+	{"type":0,
+	"question":"True or False: Reading while driving is okay, as long as it’s something light like a comic book, a celebrity gossip magazine or a Danielle Steele novel.",
+	"answers":[ "True", "False"],
+	"correct":1
+	 }
+	
+
+	]
+}

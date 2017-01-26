@@ -1,0 +1,13 @@
+{
+	
+	"data":[
+
+	{"type":1,
+	"question":"Click on the actions you should take when confronted by an aggressive driver.",
+	"answers":["Don’t allow yourself to be drawn into a confrontation", "Make an obscene gesture back when they yell at you", "Avoid eye contact with the road rage driver", "Try to get in front of them to slow and calm them down", "Stay as far behind the road rage driver as possible", "Get out of the way of the road rage driver", "Call the police and don’t get out of your car", "If you’ve done something wrong to anger another driver, try to gesture that you are sorry"],
+	"correct":[0,4,2,6,7,5]
+	 }
+	
+
+	]
+}

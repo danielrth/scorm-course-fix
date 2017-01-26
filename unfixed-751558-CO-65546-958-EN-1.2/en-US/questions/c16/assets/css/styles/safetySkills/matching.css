@@ -1,0 +1,170 @@
+html, body { border: 0; margin: 0; padding: 0; }
+body { font: Arial, Helvetica, sans-serif; color: #666; }
+
+#contact p, label, legend { font: 1.5em Arial, Helvetica, sans-serif; }
+#contact h1 { margin: 10px 0 5px; font: 22px Arial, Helvetica, sans-serif; color: rgba(166, 166, 89,1.0); }
+#contact hr { color: inherit; height: 0; margin: 6px 0 6px 0; padding: 0; border: 1px solid #d9d9d9; border-style: none none solid; }
+
+#contact {
+	display: block;
+	width: 1280px; 
+	height: 565px;
+	padding: 5px 35px 35px 35px;
+	border: 3px solid #cbcbcb;
+	background-color: #ffffe5;
+	background: url("../../../images/safetySkillsBG.png") no-repeat !important;
+
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+
+	box-shadow: 0 2px 5px rgba(50, 50, 50, 0.1);
+	-webkit-box-shadow: 0 2px 5px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow: 0 2px 5px rgba(50, 50, 50, 0.1);
+}
+
+#contact fieldset { padding: 10px 20px 20px; -webkit-border-radius:5px; -moz-border-radius:5px; margin:0 0 6px; height:455px;
+	border: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top left, rgba(211, 211, 172,1.0), rgba(255,255,255,0.0));
+    -webkit-border-image: -webkit-linear-gradient(top left, rgba(211, 211, 172,1.0), rgba(255, 255, 255,0.0));
+    border-image: linear-gradient(to bottom right, rgba(211, 211, 172,1.0), rgba(255, 255, 255,0.0) 90%, rgba(255, 255, 255,0.0));
+    border-image-slice: 1;
+}
+
+#contact legend { padding:7px 10px; font-weight:bold; color:#000; -webkit-border-radius:5px; -moz-border-radius:5px; margin-bottom:0 !important; margin-bottom:20px; 
+	border: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(left, rgba(211, 211, 172,1.0), rgba(211, 211, 172,0.5));
+    -webkit-border-image: -webkit-linear-gradient(left, rgba(211, 211, 172,1.0), rgba(211, 211, 172,0.5));
+    border-image: linear-gradient(to right, rgba(211, 211, 172,0.5), rgba(211, 211, 172,0.5));
+    border-image-slice: 1; }
+
+
+
+/*DRAGGABLE FORMATTING AND START AREA*/
+#contact #answerDiv{	/* Big div for all the answers */
+ 	float:left; 
+	width: 280px;
+	min-height:119px;
+	border:0px solid #FFF;
+	margin: 0px 0px 10px 0px;
+	padding: 5px 10px 0px 13px;	
+	background-color: rgba(219, 219, 176, 0.6);
+	border-radius: 2px;
+	}
+#contact .draggable {	/* Rules for draggable answer divs */
+	float:left;
+	width:250px;
+	height:32px;	
+	color:#fff;	
+	font-size: 12px;
+	font-weight: 700;
+	line-height:30px;
+	text-align:center;
+	padding-top: 2px;
+	margin: 0px 0px 5px 2px;
+	border: 1px solid rgba(125, 127, 65, 1);
+	border-radius: 5px;			
+	/*508-compliant background color*/	
+	background: #baba7e;
+}
+
+
+
+/*DROPPABLE FORMATTING AND TEXT AREA*/
+#contact #questionDiv{	/* Big div for all the questions */
+    float:left;
+	max-width: 860px;
+	max-height:300px;
+	margin: 0px 0px 5px 20px;
+	padding: 0px 10px 0px 10px;
+	border:0px solid #000;
+}
+#contact .sorter{
+	display:inline-block;	
+	min-height: 40px;
+	margin-bottom: 0px;
+	border-bottom: 1px solid rgba(219, 219, 176, 0.6);
+}
+#contact .sorter:last-of-type{
+	border-bottom: 0px none;
+}
+#contact .droppable{	/* Small empty boxes for the questions - i.e. where answers could be dragged */
+	display:inline-block;
+	float:left;
+	width:250px;
+	height:32px;
+	/*text-align:center;*/
+	margin: 4px 4px 0px;		
+	background-color: rgba(219, 219, 176, 0.6);
+	border-radius: 5px;	
+	}
+.droppable .draggable{ /*Changes to draggable after being dropped*/
+	margin-left:0px !important;
+}	
+.sorter .questionText{	/* Small empty boxes for the questions - i.e. where answers could be dragged */
+	display:inline-block;
+	float:left;
+	min-height: 40px;
+	width:570px;
+	color: #000;
+	vertical-align: top;
+	margin: 0px 0px 0px 10px;	
+/*	font-size: 10px;
+	line-height: 10px !important;
+*/	
+}	
+.sorter label {
+	min-height: 40px;
+	font-size: 18px;
+}
+
+#contact label {
+	font-weight: bold;
+}
+
+#questionDiv .droppable.hovered{
+	background-color: rgba(166, 166, 89, 0.6) !important;
+}
+
+
+/* BUTTON FORMATTING */
+.btn-submit{
+	float:left;
+}
+.btn-reset{
+	float:left;
+	background-color: rgba(125,127,65,1.00);
+	border-color:#666633;
+	margin-left: 10px;
+}
+.btn-submit:hover{
+
+}
+.btn-reset:hover{
+	background-color: #666633;
+}
+.btn-reset:focus{
+	background-color: #666633;
+}				
+.btn-reset:active:focus{
+	background-color: #55552b;
+}
+
+
+/*MODAL FORMATTING*/
+.modal-header{
+	text-align: center;
+      font-size: 50px;
+	border-bottom: 3px solid #888!important;
+}
+.modal-title{
+	font-size:50px;
+	text-align: center;	
+}
+.modal-body{
+	text-align: center;
+	background-color: #E3E3E3;
+}
+.modal-footer{
+	border-top: 3px solid #888!important;
+}

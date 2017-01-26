@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>SafetySkills | Course Survey</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/components.css" rel="stylesheet" />
+</head>
+<body class="login">
+	<div class="content">
+		<form class="form-horizontal" data-bind="submit: Go">
+			<fieldset>
+				<legend>Please take a moment to help make our courses better and rate the following:</legend>
+				<div class="form-group">
+					<label class="col-sm-4 control-label">RATE</label>
+					<div class="col-sm-6">
+						<img src="assets/img/scale.png" alt="Rating Scale" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-4 control-label">Introduction to the Course</label>
+					<div class="col-sm-6">
+						<label class="radio-inline">
+							<input data-bind="checked: Intro" name="introGroup" type="radio" value="1"> 1
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Intro" name="introGroup" type="radio" value="2"> 2
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Intro" name="introGroup" type="radio" value="3"> 3
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Intro" name="introGroup" type="radio" value="4"> 4
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Intro" name="introGroup" type="radio" value="5"> 5
+						</label>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-sm-4 control-label">Emphasis on the Key Points</label>
+					<div class="col-sm-6">
+						<label class="radio-inline">
+							<input data-bind="checked: Emphasis" name="emphasisGroup" type="radio" value="1"> 1
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Emphasis" name="emphasisGroup" type="radio" value="2"> 2
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Emphasis" name="emphasisGroup" type="radio" value="3"> 3
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Emphasis" name="emphasisGroup" type="radio" value="4"> 4
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Emphasis" name="emphasisGroup" type="radio" value="5"> 5
+						</label>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-sm-4 control-label">Thoroughness of Information Presented</label>
+					<div class="col-sm-6">
+						<label class="radio-inline">
+							<input data-bind="checked: Thoroughness" name="thoroughnessGroup" type="radio" value="1"> 1
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Thoroughness" name="thoroughnessGroup" type="radio" value="2"> 2
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Thoroughness" name="thoroughnessGroup" type="radio" value="3"> 3
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Thoroughness" name="thoroughnessGroup" type="radio" value="4"> 4
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Thoroughness" name="thoroughnessGroup" type="radio" value="5"> 5
+						</label>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-sm-4 control-label">Summaries / Reviews</label>
+					<div class="col-sm-6">
+						<label class="radio-inline">
+							<input data-bind="checked: Summaries" name="reviewsGroup" type="radio" value="1"> 1
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Summaries" name="reviewsGroup" type="radio" value="2"> 2
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Summaries" name="reviewsGroup" type="radio" value="3"> 3
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Summaries" name="reviewsGroup" type="radio" value="4"> 4
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Summaries" name="reviewsGroup" type="radio" value="5"> 5
+						</label>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-sm-4 control-label">Overall Evaluation of the Course</label>
+					<div class="col-sm-6">
+						<label class="radio-inline">
+							<input data-bind="checked: Overall" name="overallEvaluation" type="radio" value="1"> 1
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Overall" name="overallEvaluation" type="radio" value="2"> 2
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Overall" name="overallEvaluation" type="radio" value="3"> 3
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Overall" name="overallEvaluation" type="radio" value="4"> 4
+						</label>
+						<label class="radio-inline">
+							<input data-bind="checked: Overall" name="overallEvaluation" type="radio" value="5"> 5
+						</label>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-sm-4 control-label" for="comments">Comments</label>
+					<div class="col-sm-5">
+						<textarea class="form-control" data-bind="value: Comments" id="comments" rows="3"></textarea>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-offset-4 col-sm-8">
+						<button class="btn btn-success">Send</button>
+						<button class="btn btn-danger" data-bind="click: function(data, event){ Go('anonymous') }">Send Anonymously</button>
+						<button class="btn btn-primary" data-bind="click: function(data, event){ Go('skip') }">Skip</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="copyright">
+		SafetySkills &copy; powered by noodleStream
+	</div>
+	<script src="assets/js/knockout-3.2.0.js"></script>
+	<script>
+		function Survey() {
+			var _this = this;
+			_this.Comments = ko.observable('');
+			_this.Emphasis = ko.observable(5);
+			_this.Intro = ko.observable(5);
+			_this.Overall = ko.observable(5);
+			_this.Summaries = ko.observable(5);
+			_this.Thoroughness = ko.observable(5);
+
+			_this.Go = function (argument) {
+				var data;
+				if (argument !== 'skip') {
+					data = {
+						Comments: _this.Comments(),
+						Emphasis: _this.Emphasis(),
+						Intro: _this.Intro(),
+						IsAnonymous: argument === 'anonymous',
+						Overall: _this.Overall(),
+						Summaries: _this.Summaries(),
+						Thoroughness: _this.Thoroughness()
+					};
+				}
+
+				parent.NS.SubmitSurvey(data);
+			}
+		}
+
+		ko.applyBindings(new Survey());
+	</script>
+</body>
+</html>

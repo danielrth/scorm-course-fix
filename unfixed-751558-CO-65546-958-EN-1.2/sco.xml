@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sco tracking="SCORM1.2" version="2.0">
+  <languages default="en-US">
+    <language id="en-US" label="Start Course">
+      <next>Next</next>
+      <back>Back</back>
+      <play>Play</play>
+      <pause>Pause</pause>
+      <audio>Audio On</audio>
+      <mute>Audio Off</mute>
+      <caption>Closed Captioning</caption>
+      <replay>Replay</replay>
+      <resumeText>Would you like to continue?</resumeText>
+      <resumeYes>YES</resumeYes>
+      <resumeNo>NO</resumeNo>
+        <info>To recieve credit for this course, please use the “Exit Course” button located at the upper right of the player when closing the course</info>
+        <exit>Exit Course</exit>
+        <continuebtn>Continue</continuebtn> 
+    </language>
+   
+  </languages>
+  <topics lang="en-US" title="Road Rage">
+    <topic title="Intro">
+      <page file="en-US/navigation/navigation.html">
+        <narration>Before we start, you need to understand the course’s controls. This is the ‘play and pause’ button. Topics will play automatically, but you’ll click this button to pause and start them again. This is the ‘next’ button. You’ll click this button to advance through the course. This is the ‘back’ button. You’ll click this button to go back and rewatch topics you’ve already seen. This is the ‘replay’ button. You’ll click this button to make the current topic start over. There are test questions located throughout this course. The ‘next’ button will not work while you’re on a question. If you answer a question incorrectly, you’ll rewatch the topics that will help you answer the question. Then you’ll get another chance to answer. This process repeats until you answer all the questions correctly. If you want to read the narrative for a topic, click the ‘CC’ button, which stands for ‘closed captioning.’ If you click it again, the text will disappear. When you hear the ‘beep,’ click next to begin your course. </narration>
+      </page>
+    </topic>
+
+     <topic title="DRV 3.1.0">
+      <page file="en-US/1/slide.html">
+        <narration>The following is a true story. The names have been changed to protect the innocent. It was Friday night. Tom and his girlfriend Sandra were on their way home from a dinner party with friends. As Tom was driving about forty miles per hour along a main city thoroughfare, a dark blue sedan pulled in front of Tom’s white convertible, forcing Tom to slow down. Tom changed lanes and went around the blue sedan. He was surprised when the sedan sped up and pulled even with him. Looking over, Tom was even more surprised to see the driver of the sedan was waving a hand gun through the window. Just before Tom hit the brakes, two shots were fired. Luckily, both bullets missed Tom, and only one of the shots punched through his window. But after pulling over, Tom found that Sandra hadn’t been so lucky.
+</narration>
+      </page>
+      <page file="en-US/2/slide.html">
+        <narration>The statistics about driving are a little scary. Every five seconds, a motor vehicle accident happens. Every ten seconds, someone is injured in a motor vehicle accident. And every twelve minutes, someone dies in a motor vehicle accident. Statistics indicate that up to 66 percent of all annual traffic fatalities are caused by aggressive driving, and while the statistics aren’t exact, road rage is thought to contribute to a substantial portion of the 5.4 million or so total motor vehicle crashes every year. About eighty-nine percent of surveyed drivers said they had witnessed road rage within the last month, which indicates that most, if not all, of us have witnessed or been involved in a road rage incident at least once in our lives.
+</narration>
+      </page>
+      <page file="en-US/3/slide.html">
+        <narration>The good news is that the dangers of road rage and aggressive driving can be avoided. This course is designed to give you the information and skills necessary to react as safely as possible to remove yourself from potentially dangerous situations on the road. It is also designed to help you recognize tendencies within yourself to drive aggressively or lash out at other drivers, and help you deal more constructively with occasional frustration. When this course is over, you should be able to recognize the behaviors of aggressive drivers, identify the correct responses to take when confronted by road rage, and identify aggressive driver prevention measures.
+</narration>
+      </page>
+    </topic>
+    <topic title="DRV 3.2.0">
+      <page file="en-US/4/slide.html">
+        <narration>There are several driving behaviors that can be considered aggressive. The National Highway Traffic Safety Administration defines aggressive driving as being a combination of moving traffic offenses that endanger other people or property. Some typical aggressive driving behaviors that can indicate road rage are speeding, following too closely, also known as tailgating, making unsafe lane changes, improper or no signal during lane changes, and a general disregard for traffic control devices and signs. These can include stop signs, railroad crossing signals, yield signs, and traffic signals. One of the most dangerous aggressive driving behaviors is running red lights, so always play it safe and drive carefully through all intersections.
+</narration>
+      </page>
+      <page file="en-US/5/slide.html">
+        <narration>There are also several things drivers can do while driving aggressively that can signal a road rage situation. When angry, drivers can make obscene hand gestures, try to hit other cars with thrown objects, yell at other drivers, honk excessively or without good reason, or wave a weapon at other drivers. Sometimes even appropriate honking can result in road rage. For example, one summer day in 2005, Ken Brown honked at a slow-moving car that was blocking traffic. The driver of the slow-moving car, 75-year-old Jerry King, followed Brown until he finally pulled over. When Brown got out of his car to talk to King, King threw a bottle of prescription medication at Brown, and then drove into him, crushing his knees. In an ironic twist, Brown was prescribed the exact same type of medication for his pain that King threw at him on that fateful day.
+</narration>
+      </page>
+       <page file="en-US/questions/i7/index.html" pType="quiz">
+        <kickback file="en-US/4/slide.html"></kickback>
+      </page>
+       <page file="en-US/questions/c8/index.html" pType="quiz">
+        <kickback file="en-US/2/slide.html"></kickback>
+        <kickback file="en-US/3/slide.html"></kickback>
+        <kickback file="en-US/4/slide.html"></kickback>
+        <kickback file="en-US/5/slide.html"></kickback>
+      </page>
+    </topic>
+    <topic title="DRV 3.3.0">
+      <page file="en-US/8/slide.html">
+        <narration>When another driver displays aggressive driving behavior, it’s only natural to get angry in response. In fact, it’s estimated that when faced with an aggressive driver, people respond with their own aggressive driving behavior about fifty percent of the time. While it’s sometimes tempting to get angry, responding with more aggressive behavior can cause the other driver to escalate the original aggressive behavior, which can eventually lead to violence. Instead of reacting aggressively, resist the urge to make obscene hand gestures, mouth obscene words or otherwise provoke another driver. It’s best to ignore the aggressive driver, making sure to avoid eye contact. If you are the one who makes the other driver angry, try to indicate an apology by shrugging or mouthing ‘sorry.’
+</narration>
+      </page>
+      <page file="en-US/9/slide.html">
+        <narration>When dealing with an angry or aggressive driver, it’s best to get behind her vehicle and stay as far behind as possible. This also gives you the opportunity to pull over and let the other driver go on their way. Trying to pace or block an aggressive driver is never a good idea. If someone cuts you off, speeds around you or does something else that makes you angry, remember it isn’t worth it to get upset. Let it go and continue on as if nothing had happened. If you ever feel you are in real danger from another driver, call the police if you have a cell phone, or drive to the nearest police station or heavily populated area. Don’t drive home, and don’t get out of the car until the angry driver is gone and it’s safe. If for some reason you’re stopped and an angry driver approaches your car, roll up the windows and lock the doors.
+</narration>
+      </page>
+ <page file="en-US/questions/i11/index.html" pType="quiz">
+        <kickback file="en-US/9/slide.html"></kickback>
+      </page>
+       <page file="en-US/questions/c12/index.html" pType="quiz">
+        <kickback file="en-US/8/slide.html"></kickback>
+        <kickback file="en-US/9/slide.html"></kickback>
+      </page>
+    </topic>
+    <topic title="DRV 3.4.0">
+      <page file="en-US/12/slide.html">
+        <narration>The best way to prevent being an aggressive driver is to realize how dangerous it is and make an effort to keep your emotions in check. We all have bad days, but it isn’t worth the danger it can cause to take your frustration out on other drivers. While driving, you should try to put your problems aside and focus on the job of getting where you’re going without getting hurt or hurting someone else along the way. If traffic along your usual route is congested, try taking an alternate path to avoid frustration. It’s best to avoid distractions like cell phones, excessively loud music or even reading, putting on makeup, or watching TV in the car, as some drivers have been known to do. Try to be considerate of other drivers. Do your best not to cut people off, especially when you’re merging onto the freeway. When entering the freeway, it’s your responsibility to yield to existing traffic and ease into its flow.
+</narration>
+      </page>
+      <page file="en-US/13/slide.html">
+        <narration>Once you’re on the freeway, stay in the right hand lane if you’re going slower than the rest of traffic, and let others pass you on the left. If you’re running late, resist the urge to speed. Speeding is dangerous for you and others on the road. Following too close, also known as tailgating is another unnecessarily dangerous driving behavior. Always allow plenty of following time between you and the car ahead. To gauge following time, wait for the car ahead to pass a stationary object next to the road like a sign. Then count slowly until your car passes the same stationary object. The time it takes for your car to pass the stationary object is your following time. You should allow two- to four-seconds of following time on dry roads, and extend that time on wet or icy roads. Finally, always use your turn signal. One survey showed that fifty-seven percent of drivers don’t regularly use turn signals. Letting other drivers know you’re about to turn is another way to be a considerate driver and help avoid accidents.  
+</narration>
+      </page>
+    </topic>
+    <topic title="DRV 3.5.0">
+      <page file="en-US/16/slide.html">
+        <narration>In another example of how angry, aggressive driving can go wrong, 48-year-old Sam Pinto was driving home from washing his car one night. After stopping at a stop sign, Pinto was about to proceed when a tan Jeep traveling in the opposite direction ran the stop sign and turned in front of him. Pinto followed the Jeep, and forced the driver to pull over a few miles away. Pinto and the Jeep’s driver argued, and then Pinto began beating the man. Little did Pinto know that the Jeep’s driver had a passenger, and the passenger had a seven-inch, razor-sharp hunting knife. When Pinto turned around, the Jeep’s passenger stabbed him five times in the stomach. Pinto was left to die a painful, slow-bleeding death by the side of the road.
+</narration>
+      </page>
+      <page file="en-US/17/slide.html">
+        <narration>We’ve used some dramatic examples to illustrate the dangers of aggressive driving and road rage, and we may have played a little fast and loose with the facts for effect. But the reality is that many people have been injured and killed as a result of aggressive driving and road rage, and there’s nothing funny about it. Most of us drive every day, and it’s up to us to drive with an emphasis on safety and consideration. Now you should be able to recognize the behaviors of aggressive drivers, identify the correct responses to take when confronted by road rage, and aggressive driver prevention measures. Stay safe and good luck.
+</narration>
+      </page>
+    </topic>
+ 
+    <topic title="End">
+      <page file="en-US/end/slide.html" end="true"></page>
+    </topic>
+  </topics>
+</sco>

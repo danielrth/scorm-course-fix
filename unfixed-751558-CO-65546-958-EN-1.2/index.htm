@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8" />
+	<title>Loading ...</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="author" content="2458178.5" />
+	<!--Adobe Edge Runtime-->
+	<style>
+		.edgeLoad-EDGE-872154746 {
+			visibility: hidden;
+		}
+	</style>
+	<script type="text/javascript" src="/shared/assets/js/SCORM_API_wrapper.js"></script>
+	<script type="text/javascript" src="/shared/assets/js/rsremove.js"></script>
+	<script>
+		window.onpopstate = (function (window) {
+			'use strict';
+			var match,
+			   pl = /\+/g,  // Regex for replacing addition symbol with a space
+			   search = /([^&=]+)=?([^&]*)/g,
+			   decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+			   query = window.location.search.substring(1);
+
+			window.querystrings = {};
+
+			while (!!(match = search.exec(query))) {
+				window.querystrings[decode(match[1]).toLowerCase()] = decode(match[2]);
+			}
+			return this;
+		})(this);
+		var script = document.createElement('script');
+		var edgePath = 'edge_includes/edge.6.0.0.min.js';
+		var compPath = 'player';
+		var scaled = 'both';
+		if ((/iphone|ipad/i.test(navigator.userAgent.toLowerCase()))) {
+			scaled = 'none';
+		}
+		var loaded = function () {
+			AdobeEdge.loadComposition(compPath, 'EDGE-872154746', {
+				scaleToFit: scaled,
+				centerStage: "horizontal",
+				minW: "0",
+				maxW: "undefined"
+			}, {
+				dom: []
+			}, { "dom": {} });
+			window.scrollTo(0, 1);
+		};
+		script.async = false;
+		script.charset = 'utf-8';
+		script.onload = loaded;
+		script.onreadystate = loaded;
+		if (window.querystrings.company) {
+			var XHR = new XMLHttpRequest(),
+				interfacePath = '../../html-interfaces/' + window.querystrings.company + '/';
+			XHR.open('GET', interfacePath + edgePath, false);
+			XHR.onreadystatechange = function () {
+				if (this.readyState === 4) {
+					if (this.status === 200 || this.status === 304) {
+						compPath = interfacePath + compPath;
+						script.src = interfacePath + edgePath;
+					} else {
+						script.src = edgePath;
+					}
+					document.getElementsByTagName('head')[0].appendChild(script);
+				}
+			};
+			XHR.send();
+		} else {
+			script.src = edgePath;
+			document.getElementsByTagName('head')[0].appendChild(script);
+		}
+	</script>
+	<!--Adobe Edge Runtime End-->
+</head>
+<body style="margin:0;padding:0;">
+	<div id="Stage" class="EDGE-872154746"></div>
+</body>
+</html>

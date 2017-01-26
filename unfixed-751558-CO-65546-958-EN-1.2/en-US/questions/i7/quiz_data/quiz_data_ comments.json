@@ -1,0 +1,142 @@
+{
+//ALL THE DATA BEGINS HERE
+	"data":[
+
+//******************************************************************************************************
+//****************************************** QUIZ 1 STARTS HERE ****************************************
+//******************************************************************************************************
+	{
+//Choose language for static items here:
+//This property is OPTIONAL and if left out or removed, then "language" will be set to 0 ("language": 0)
+		"language": 0,
+		//0 = English
+		//1 = Spanish
+
+//Choose css style sheet here:
+//This property is OPTIONAL and if left out or removed, then "style" will be set to 0 ("style": 0)
+		"style": 0,
+	      //0 is SafetySkills
+	      //1 is default (unformatted)
+	      //2 is iSpring
+
+//Choose css variant here:
+//Used when multiple questions of the same type need variations in the css style sheets
+//This property is OPTIONAL and if left out or removed, then "variant" will be set to 0 ("variant": 0)
+		"variant": 0,
+	      //0 is "standard" unchanged SafetySkills
+	      //1 is var-1.css
+	      //2 is var-2.css
+	      //etc.
+      
+
+//Choose quiz type here: 
+		"type":1,
+	      //0 is Multiple Choice
+	      //1 is Multi-Select
+	      //2 is Drop-down List
+	      //3 is Matching (drag-and-drop)
+	      //4 is Word Bank (drag-and-drop)
+	      //5 is Group Matching (drag-and-drop)
+	      //6 is Sorting (drag-and-drop)
+	      //7 is Multiple Choice Images
+	      //8 is Multi-Select Images
+	      //9 is Matching Images (drag-and-drop)
+	      //10 is Word Bank Images (drag-and-drop)
+	      //11 is Group Matching Images (drag-and-drop)
+
+
+//Enter the question text here:
+		"question":"Select each statement below that correctly describes an internal safety auditing protocol or procedure.",
+
+
+//Enter the answer text here (one answer per line makes it easier to read and edit):	
+		"answers":[
+			/*ANSWER 0*/"Assure the management that public disclosure of audit results is a serious thing that isn’t taken lightly and they will be directly involved in all disclosures.",
+			/*ANSWER 1*/ "Order managers or other company employees to leave the premises if they question your judgment.",
+			/*ANSWER 2*/ "Encourage employees to tell you about safety rule infractions committed by their co-workers. ",
+			/*ANSWER 3*/ "Threaten workers with termination if they don’t tell you what you want to know.",
+			/*ANSWER 4*/ "If members of management are included in the audit team, they should be assigned to examine aspects of the program for which they aren’t directly responsible if possible.",
+			/*ANSWER 5*/ "Periodically, the audit team should stop to analyze the data already collected so they can decide what information is most important to collect next.",
+			/*ANSWER 6*/ "Examine the company’s relations with those outside the company like customers, contractors, and complaints from the community.",
+			/*ANSWER 7*/ "Information gathered must be analyzed, put in order and written as a report and presented to management."
+		],
+
+//Indicate wich answers are correct here:
+		"correct":[0,4,5,6,7]
+		//Answer format as follows:
+		//0 = Multiple Choice & True/False
+				//"correct":1
+				//where the number is for the correct answer above
+
+		//1 = Multiple Select
+				//"correct":[0,4,5,6,7] 
+				//where the number is for the correct answers above
+
+    	//2 is Drop-down List
+				//"correct":[0,4,5,6,7] 
+				//where the number is for the correct answers above
+
+    	//3 is Matching (drag-and-drop)
+    			//"answers" and "droppables" should be listed in the same order that they are matched
+    			//"answer1", "answer2", "answer3", etc.
+    			//"droppable1", "droppable2", "droppable3", etc.
+
+    	//4 is Word Bank (drag-and-drop)
+    			//"answers" and "droppables" should be listed in the same order that they are matched
+    			//"answer1", "answer2", "answer3", etc.
+    			//"droppable1", "droppable2", "droppable3", etc.
+
+    	//5 is Group Matching (drag-and-drop)
+    			//answers are listed under the group to which they are matched (example below)
+    			//{"groupName":"groupOne",
+				// "label":"GREEN BOX",
+				// "answers": [
+				//	{"answer":"Put this in the GREEN box"},
+				//	{"answer":"Put this in the GREEN box"}
+				//]},
+
+    	//6 is Sorting (drag-and-drop)
+    			//list the answers in the correct sorted order
+    			//"answer1", "answer2", "answer3", "answer4", etc.
+
+    	//7 is Multiple Choice Images
+    			//list the file path for each "answer" instead of normal text 
+				//"correct":1
+				//where the number is for the correct answer above
+
+    	//8 is Multi-Select Images
+    			//list the file path for each "answer" instead of normal text 
+				//"correct":[0,4,5,6,7] 
+				//where the number is for the correct answers above
+
+    	//9 is Matching Images (drag-and-drop)
+    			//list the file path for each "answer" instead of normal text 
+    			//"answers" and "droppables" should be listed in the same order that they are matched
+    			//"answer1", "answer2", "answer3", etc.
+    			//"droppable1", "droppable2", "droppable3", etc.
+
+    	//10 is Word Bank Images (drag-and-drop)
+    			//list the file path for each "answer" instead of normal text 
+    			//"answers" and "droppables" should be listed in the same order that they are matched
+    			//"answer1", "answer2", "answer3", etc.
+    			//"droppable1", "droppable2", "droppable3", etc.
+
+    	//11 is Group Matching Images (drag-and-drop)
+    			//list the file path for each "answer" instead of normal text 
+    			//"answers" and "droppables" should be listed in the same order that they are matched
+    			//"answer1", "answer2", "answer3", etc.
+    			//"droppable1", "droppable2", "droppable3", etc.
+
+
+	},// <== THIS COMMA NEDS TO BE HERE IF THERE ARE MORE QUIZZES
+//*************************************************************************************************************************
+//****************************************** QUIZ 1 ENDS HERE *************************************************************
+//*************************************************************************************************************************	
+
+
+//Copy the entire QUIZ 1 area from //******* to ********* and past it below this line
+
+
+	]
+//ALL THE DATA ENDS HERE	
+}

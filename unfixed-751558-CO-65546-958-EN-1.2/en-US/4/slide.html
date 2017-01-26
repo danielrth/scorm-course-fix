@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Slide</title>
+	<style>
+		#container{position:relative}video,canvas{top:0;left:0;width:100%;max-width:100%;height:auto;}video{height:565px;position:absolute}body{margin:0;height:100%;width:100%}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<canvas></canvas>
+		<video controls id="vid" autoplay poster="slide.jpg">
+			<source src="slide.webm" type="video/webm">
+			<source src="slide.mp4" type="video/mp4">
+			Your browser does not support the video element.
+		</video>
+	</div>
+	<script>
+		var vid = document.getElementById('vid'),
+			inInterface = parent !== window;
+		if (window.addEventListener) {
+			vid.addEventListener('play', function () {
+				vid.controls = false;
+			}, false);
+			vid.addEventListener('ended', function () {
+				if (inInterface) {
+					parent.NS.SlideEnd();
+				}
+			}, false);
+		}
+		if (inInterface) {
+			var options = {
+				slidePlay: function () {
+					vid.play();
+				},
+				slidePause: function () {
+					vid.pause();
+				}
+			};
+			parent.NS.SlideStart(options);
+		}
+	</script>
+</body>
+</html>

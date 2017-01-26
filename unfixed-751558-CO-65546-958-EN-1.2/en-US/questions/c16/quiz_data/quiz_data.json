@@ -1,0 +1,13 @@
+{
+	
+	"data":[
+
+	{"type":1,
+	"question":"Click on the measures that can prevent aggressive driving.",
+	"answers":["Stay calm, relaxed and focused on driving safely", "Don’t take frustrations out on fellow motorists", "Display a peace sign on your car bumper", "Leave plenty of room between you and other motorists", "Drive with your radio turned up loud so the other motorist can enjoy it", "Drive in the right hand slow lane if you are driving slower than the traffic", "Keep updated on world news events", "Use your turn signals Plan ahead and don’t speed"],
+	"correct":[0,3,7,1,5]
+	 }
+	
+
+	]
+}

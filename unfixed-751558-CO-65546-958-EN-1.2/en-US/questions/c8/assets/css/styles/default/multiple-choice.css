@@ -1,0 +1,173 @@
+html, body { border: 0; margin: 0; padding: 0; }
+body { font: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif; min-width: 100%; min-height: 101%; color: #666; background:#E3E3E3 !important; }
+
+#contact p, label, legend { font: 1.5em "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif; }
+#contact h1 { margin: 10px 0 10px; font-size: 24px; color: #333333; }
+#contact hr { color: inherit; height: 0; margin: 6px 0 6px 0; padding: 0; border: 1px solid #d9d9d9; border-style: none none solid; }
+
+#contact {
+	display: block;
+	width: 100%;
+	padding: 35px;
+	border: 3px solid #cbcbcb;
+	background-color: #FFF;
+
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+
+	box-shadow: 0 2px 5px rgba(50, 50, 50, 0.1);
+	-webkit-box-shadow: 0 2px 5px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow: 0 2px 5px rgba(50, 50, 50, 0.1);
+}
+
+#contact fieldset { padding:20px; border:1px solid #eee; -webkit-border-radius:5px; -moz-border-radius:5px; margin:0 0 20px; height:395px;}
+#contact legend { padding:7px 10px; font-weight:bold; color:#000; border:1px solid #eee; -webkit-border-radius:5px; -moz-border-radius:5px; margin-bottom:0 !important; margin-bottom:20px; }
+
+fieldset div{
+	padding-left: 5px;
+	width: 450px;
+}
+span.svgCheck {
+	position:absolute;
+	left: 6px;
+	top: 6px;
+	z-index:2;
+	opacity: 0;
+}
+
+/* CHECKBOX FORMATTING */
+input[type="radio"] {
+	left:26px;
+	top:8px;
+	width: 22px;
+	height: 22px;
+	z-index: 2;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline:0;
+	opacity: 0;
+}
+#contact label {
+  position: relative;
+  font-weight: bold;
+  color: #000;
+}
+label:before {
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 4px 2px 4px 0px;
+  background: #fff;
+  content: " ";
+  cursor: pointer;
+  box-shadow: 0 0 0 0.14em #999999;
+  border: 2px solid #fff;
+  text-align: center;
+  line-height: 10px;
+  vertical-align: top;
+  color: #555;
+  margin-top: 4px;
+}
+
+/*INPUT BOX FORMATTING*/
+/*Position the checkmark image differently depending on the state of each checkbox and radio button.*/
+input[type="radio"]:focus ~ span.svgCheck {
+	opacity: 0;
+}
+input[type="radio"]:checked ~ span.svgCheck {
+	opacity:100;
+}
+input[type="radio"]:checked:focus ~ span.svgCheck {
+	opacity: 100;
+}
+label.disabled::before {
+	border-color: #bbb;
+	color: #bbb;
+	text-shadow: 0 -1px #ccc, 0 1px #666;
+	background: -moz-linear-gradient(top, #d5d5d5, #e5e5e5);
+}
+label:before {
+  background: #e5e5e5;
+  background:	
+		linear-gradient(180deg, rgba(217, 217, 217,0.60), rgba(229,229,229,0.60) 30%, rgba(255,255,255,0.00)) no-repeat,
+		linear-gradient(rgba(255,255,255,1.00), rgba(255,255,255,1.00)) no-repeat;
+/*  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;*/
+  border-radius: 1.0em;
+  /*box-shadow: inset 0 0 1px #fff;*/
+  /*text-shadow: 0 -1px #fff, 0 1px #000;*/
+}
+label.checked:before {
+  background: #fff;
+  border-radius: 1.0em;
+ }
+.radio:focus {
+	background-color: rgba(255, 0, 0, 0.2);
+	border-radius: 5px;
+}
+.radio:hover {
+	background-color: rgba(255, 0, 0, 0.2);
+	border-radius: 5px;
+}
+.radio {
+	min-height: 1.5em;
+	width:450px;	
+	padding: 0px 10px 0px 35px;	
+	margin: 0 0 0.6em 0;	
+}
+
+
+
+
+/* BUTTON FORMATTING */
+button.btn-submit{
+	float:right;
+	margin: 12px 0px 0px 5px;
+	height:34px;
+	width:96px;
+	color:#fff;
+	background-color: #cd3c34;
+	font-family: 'Arial' !important;
+	font-size: 1.55em;
+	font-weight: 700;
+	letter-spacing: .01em;
+	border:0px solid;
+	border-radius:5px;
+	border-left: 2px solid #a3a3a3;
+	border-right: 2px solid #a3a3a3;
+	padding:  1px 18px 1px 18px;
+}
+.btn-submit:hover{
+	background-color: #8a2121;
+}
+
+.btn-submit:focus {
+	background-color: #8a2121;
+	outline-radius: 5px;
+	outline: 1px solid rgba(27,149,185,1);		
+}
+
+
+/* MODAL FORMATTING */
+.modal-header{
+	text-align: center;
+      font-size: 50px;
+	border-bottom: 3px solid #888!important;
+}
+.modal-title{
+	font-size:50px;
+	text-align: center;	
+}
+.modal-body{
+	font-size:14px;
+	text-align: center;
+	background-color: #E3E3E3;
+}
+.modal-footer{
+	border-top: 3px solid #888!important;
+}
