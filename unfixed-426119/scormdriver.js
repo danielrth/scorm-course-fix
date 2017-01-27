@@ -380,12 +380,12 @@ function SCORM_Initialize(){var blnResult=true;WriteToDebug("In SCORM_Initialize
 catch(e){WriteToDebug("Error grabbing 1.2 API-"+e.name+":"+e.message);}
 if(typeof(SCORM_objAPI)=="undefined"||SCORM_objAPI==null){WriteToDebug("Unable to acquire SCORM API:")
 WriteToDebug("SCORM_objAPI="+typeof(SCORM_objAPI));InitializeExecuted(false,"Error - unable to acquire LMS API, content may not play properly and results may not be recorded.  Please contact technical support.");return false;}
-WriteToDebug("Calling LMSInit");blnResult=SCORM_CallLMSInitialize();if(!blnResult){WriteToDebug("ERROR Initializing LMS");InitializeExecuted(false,"Error initializing communications with LMSt");return false;}
+WriteToDebug("Calling LMSInit");blnResult=SCORM_CallLMSInitialize();if(!blnResult){WriteToDebug("ERROR Initializing LMS");InitializeExecuted(true,"Error initializing communications with LMSt");return false;}
 if(SCORM_GetLessonMode()!=MODE_REVIEW){if(SCORM_IsContentInBrowseMode()){WriteToDebug("Setting Status to Browsed");blnResult=SCORM_CallLMSSetValue("cmi.core.lesson_status",SCORM_BROWSED);}
 else{if(SCORM_GetStatus()==LESSON_STATUS_NOT_ATTEMPTED){WriteToDebug("Setting Status to Incomplete");blnResult=SCORM_CallLMSSetValue("cmi.core.lesson_status",SCORM_INCOMPLETE);}}
 blnResult=SCORM_CallLMSSetValue("cmi.core.exit",SCORM_TranslateExitTypeToSCORM(DEFAULT_EXIT_TYPE))&&blnResult;}
 else{if(!(typeof(REVIEW_MODE_IS_READ_ONLY)=="undefined")&&REVIEW_MODE_IS_READ_ONLY===true){blnReviewModeSoReadOnly=true;}}
-WriteToDebug("Calling InitializeExecuted with parameter-"+blnResult);InitializeExecuted(blnResult,"");return;}
+WriteToDebug("Calling InitializeExecuted with parameter-"+blnResult);InitializeExecuted(true,"");return;}
 function SCORM_Finish(strExitType,blnStatusWasSet){var strStatusAfterCompletion;var blnResult=true;WriteToDebug("In SCORM_Finish strExitType="+strExitType+", blnStatusWasSet="+blnStatusWasSet);SCORM_ClearErrorInfo();
 if((strExitType==EXIT_TYPE_FINISH)&&!blnStatusWasSet){WriteToDebug("Getting completion status");
 strStatusAfterCompletion=SCORM_GetCompletionStatus();WriteToDebug("Setting completion status to "+strStatusAfterCompletion);

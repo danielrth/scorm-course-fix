@@ -38,7 +38,7 @@ function DoFinish()
     {
     	if(CaptivateObj)
     	{
-    		CaptivateObj.flushSwfQueue();
+    		// CaptivateObj.flushSwfQueue();
     		CommitData();
     		Unload();
     	}
