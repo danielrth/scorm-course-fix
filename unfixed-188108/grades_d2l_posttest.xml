@@ -1,0 +1,30 @@
+﻿<grades>
+  <configuration>
+    <auto_update_final_grade>1</auto_update_final_grade>
+    <grading_system>0</grading_system>
+    <include_empty_grades_in_final>false</include_empty_grades_in_final>
+    <default_scheme>0</default_scheme>
+    <show_user_name>0</show_user_name>
+    <show_user_email>0</show_user_email>
+  </configuration>
+  <categories/>
+  <items>
+    <item id="21" identifier="6417" resource_code="gracehill-34984">
+      <name>Post-Test</name>
+      <short_name>posttest-import</short_name>
+      <sort_order>2</sort_order>
+      <show_average>false</show_average>
+      <show_distribution>false</show_distribution>
+      <description is_displayed="false" text_type="text/html"/>
+      <type_id>1</type_id>
+      <is_active>true</is_active>
+      <scoring>
+        <can_exceed_weight>false</can_exceed_weight>
+        <out_of>10</out_of>
+        <is_bonus>false</is_bonus>
+        <max_grade>10</max_grade>
+        <exclude_from_final_grade_calc>false</exclude_from_final_grade_calc>
+      </scoring>
+    </item>
+  </items>
+</grades>
