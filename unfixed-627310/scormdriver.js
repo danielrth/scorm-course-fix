@@ -46,7 +46,7 @@ var DATA_CHUNK_PAIR_SEPARATOR = '###';
 var DATA_CHUNK_VALUE_SEPARATOR = '$$';
 var APPID = "";
 var blnDebug = false;
-var strLMSStandard = "SCORM";
+var strLMSStandard = "AUTO";
 var DEFAULT_EXIT_TYPE = EXIT_TYPE_SUSPEND;
 var AICC_LESSON_ID = "1";
 var EXIT_BEHAVIOR = "SCORM_RECOMMENDED";
@@ -750,7 +750,8 @@ function SCORM2004_GetStudentID() {
 function SCORM2004_GetStudentName() {
     WriteToDebug("In SCORM2004_GetStudentName");
     SCORM2004_ClearErrorInfo();
-    return SCORM2004_CallGetValue("cmi.learner_name");
+    // return SCORM2004_CallGetValue("cmi.learner_name");
+    return "A A";
 }
 
 function SCORM2004_GetBookmark() {
